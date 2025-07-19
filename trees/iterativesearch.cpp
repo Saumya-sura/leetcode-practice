@@ -42,6 +42,14 @@ int  isBst(struct node*root){
     }
 return 1;
 }
+struct node *search(struct node*root,int key){
+    while(root!=NULL){
+        if(root->data == key) return root;
+        else if(root->data > key) root = root->left;
+        else root = root->right;
+    }
+    return NULL; 
+}
 
 int main(){
     node *root = new node(1);
@@ -63,6 +71,13 @@ int main(){
     } else {
         cout << "The tree is not a BST" << endl;
     }
-    return 0;
     
+    struct node* n = search(root, 3);
+    if(n != NULL) {
+        cout << "Found node with value: " << n->data << endl;
+    } else {
+        cout << "Node not found." << endl;
+    }   
+    
+    return 0;
 }
