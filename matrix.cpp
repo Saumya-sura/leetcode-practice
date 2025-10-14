@@ -12,7 +12,7 @@ public:
             for (int i = left; i <= right; i++) {
                 ans.push_back(mat[top][i]);
             }
-            top++;
+            top++;3
 
             // Top to Bottom
             for (int i = top; i <= bottom; i++) {

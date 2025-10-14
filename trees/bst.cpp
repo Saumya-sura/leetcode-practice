@@ -1,68 +1,103 @@
-#include<iostream>
+#include <iostream>
+#include <queue>
 using namespace std;
-struct node{
-        int data;
-        node *left;
-        node *right;
-        node(int val){
-            data =val;
-            left=nullptr;
-            right=nullptr;
+
+const int MAX = 20;
+
+void bfs(int n, int adj[MAX][MAX], int start) {
+    bool visited[MAX] = {false};
+    queue<int> q;
+    visited[start] = true;
+    q.push(start);
+    cout << "BFS: ";
+    while (!q.empty()) {
+        int u = q.front(); q.pop();
+        cout << u << " ";
+        for (int v = 0; v < n; ++v) {
+            if (adj[u][v] != 0 && !visited[v]) {
+                visited[v] = true;
+                q.push(v);
+            }
         }
-};
-void preorder(node *root){
-    if(root ==NULL) return ;
-    cout<<root->data<<" ";
-    preorder(root->left);
-    preorder(root->right);
-}
-void postorder(node *root){
-    if(root ==NULL) return ;
-    postorder(root->left);
-    postorder(root->right);
-    cout<<root->data<<" ";
-}
-void inorder(node *root){
-    if(root ==NULL) return ;
-    inorder(root->left);
-    cout<<root->data<<" ";
-    inorder(root->right);
-}   
-int  isBst(struct node*root){
-    static struct node* prev =NULL;
-    if(root!=NULL){
-        if(!isBst(root->left)) {
-        return false;
-        }
-        if(prev != NULL && prev->data >= root->data) {
-            return false;
-        }
-        prev = root;
-        return isBst(root->right);
     }
-return 1;
+    for (int i = 0; i < n; ++i) {
+        if (!visited[i]) {
+            visited[i] = true;
+            q.push(i);
+            while (!q.empty()) {
+                int u = q.front(); q.pop();
+                cout << u << " ";
+                for (int v = 0; v < n; ++v) {
+                    if (adj[u][v] != 0 && !visited[v]) {
+                        visited[v] = true;
+                        q.push(v);
+                    }
+                }
+            }
+        }
+    }
+    cout << "\n";
 }
 
-int main(){
-    node *root = new node(1);
-    root->left = new node(2);
-    root->right = new node(3);
-    root->left->left = new node(4);
-    root->left->right = new node(5);
-    root->right->left = new node(6);
-    root->right->right = new node(7);
-    preorder(root);
-    
-    cout << endl;
-    postorder(root);
-    cout << endl;
-    inorder(root);
-    cout << endl;
-    if(isBst(root)){
-        cout << "The tree is a BST" << endl;
-    } else {
-        cout << "The tree is not a BST" << endl;
+void dfsUtil(int n, int adj[MAX][MAX], int u, bool visited[]) {
+    visited[u] = true;
+    cout << u << " ";
+    for (int v = 0; v < n; ++v) {
+        if (adj[u][v] != 0 && !visited[v]) dfsUtil(n, adj, v, visited);
+    }
+}
+
+void dfs(int n, int adj[MAX][MAX], int start) {
+    bool visited[MAX] = {false};
+    cout << "DFS: ";
+    dfsUtil(n, adj, start, visited);
+    for (int i = 0; i < n; ++i) {
+        if (!visited[i]) dfsUtil(n, adj, i, visited);
+    }
+    cout << "\n";
+}
+
+int main() {
+    int n;
+    cout<<"C-136  \n";
+    cout << "Enter number of vertices (max " << MAX << "): ";
+    cin >> n;
+    if (n <= 0 || n > MAX) {
+        cout << "Invalid n\n";
+        return 0;
+    }
+    int adj[MAX][MAX];
+    cout << "Enter adjacency matrix (" << n << "x" << n << "):\n";
+    for (int i = 0; i < n; ++i)
+        for (int j = 0; j < n; ++j)
+            cin >> adj[i][j];
+    while (true) {
+        cout << "\nMenu:\n";
+        cout << "1. BFS\n";
+        cout << "2. DFS\n";
+        cout << "3. Print adjacency matrix\n";
+        cout << "4. Exit\n";
+        cout << "Choose option: ";
+        int opt; cin >> opt;
+        if (opt == 1) {
+            int s; cout << "Start vertex (0 to " << n-1 << "): "; cin >> s;
+            if (s < 0 || s >= n) cout << "Invalid start\n";
+            else bfs(n, adj, s);
+        } else if (opt == 2) {
+            int s; cout << "Start vertex (0 to " << n-1 << "): "; cin >> s;
+            if (s < 0 || s >= n) cout << "Invalid start\n";
+            else dfs(n, adj, s);
+        } else if (opt == 3) {
+            cout << "Adjacency matrix:\n";
+            for (int i = 0; i < n; ++i) {
+                for (int j = 0; j < n; ++j) cout << adj[i][j] << " ";
+                cout << "\n";
+            }
+        } else if (opt == 4) {
+            break;
+        } else {
+            cout << "Invalid option\n";
+        }
     }
     return 0;
-    
 }
