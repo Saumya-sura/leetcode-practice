@@ -1,3 +1,4 @@
+/Take 1 number and change elft and rigth to get 0 else chnage iteration 
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
