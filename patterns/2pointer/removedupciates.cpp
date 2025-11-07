@@ -13,3 +13,7 @@ public:
         return k;
     }
 };
+
+
+// 1 1 2 3 
+// op =3 number of unique elements
