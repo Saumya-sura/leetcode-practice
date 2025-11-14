@@ -29,3 +29,13 @@ public:
         return longest;
     }
 };
+
+
+// ex:
+/* 
+1
+2    3
+4 5 
+find diuameter i.e  length of the longest path between any two nodes in a tree. 
+4,2,1,3 = 3
+*/
