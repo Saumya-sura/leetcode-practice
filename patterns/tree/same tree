@@ -20,3 +20,7 @@ return (p->val == q->val) &&
                isSameTree(p->right, q->right);
     }
 };
+
+// Ex:
+// 1               1
+// 2 3           2 3
