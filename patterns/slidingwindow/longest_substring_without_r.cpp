@@ -15,3 +15,9 @@ public:
         return ml;
     }
 };
+
+
+// insertion and if found deltion of whole set and insertion from where duplicat e start
+
+// ex: abca
+// output 3
