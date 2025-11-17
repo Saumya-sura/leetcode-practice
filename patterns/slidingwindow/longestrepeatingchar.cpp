@@ -20,3 +20,7 @@ public:
         return res;
     }
 };
+
+
+// EX: AABABBA
+// k=1
