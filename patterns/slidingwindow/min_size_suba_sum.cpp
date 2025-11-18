@@ -14,3 +14,7 @@ public:
         return (ml == INT_MAX)?0:ml;
     }
 };
+
+// EX: nums = [2,3,1,2,4,3], target = 7
+// Output: 2
+// Explanation: The subarray [4,3] has the minimal length under the problem constraint.
