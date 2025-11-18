@@ -15,4 +15,6 @@ public:
 
 };
 
-// EX:
+// EX: nums = [1,12,-5,-6,50,3], k = 4 
+// Output: 12.75
+// Explanation: Maximum average is (12-5-6+50)/4 = 51/4 = 12.75
