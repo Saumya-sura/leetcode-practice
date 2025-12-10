@@ -1,0 +1,25 @@
+class Solution {
+public:
+    int longestConsecutive(vector<int>& nums) {
+        if (nums.empty()) return 0;
+        set<int> s(nums.begin(),nums.end());
+        int l=0;
+        for (int num:s){
+            if(!s.count(num-1)){
+                int cn = num;
+                int length =1;
+
+                while(s.count(cn+1)){
+                    cn++;
+                    length++;
+                }
+                l =max(l,length);
+            }
+           
+        }
+         return l;
+    }
+};
+
+ex : 100,1,2,3,200,4
+1,2,3,4, =4
