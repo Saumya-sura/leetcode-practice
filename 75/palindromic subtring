@@ -21,4 +21,6 @@ public:
       return count;
     }
 };
-
+EX: 
+abc 
+ouput : 3 i.e a,b,c
