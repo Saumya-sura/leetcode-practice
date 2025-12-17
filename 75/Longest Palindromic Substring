@@ -1,0 +1,29 @@
+class Solution {
+public:
+    string longestPalindrome(string s) {
+        int ml=0,st=0;
+        int n = s.length();
+        for(int i =0;i<n;i++){
+            for(int j=i;j<n;j++){
+                bool isPal = true;
+                int l=i,r=j;
+                while(l<r){
+                    if(s[l] != s[r]){
+                        isPal =false;
+                        break;
+                    }
+                    l++;
+                    r--;
+                }
+                if(isPal && (j-i+1) >ml){
+                    st=i;
+                    ml = j-i+1;
+                    
+                }
+            }
+        }
+        return s.substr(st,ml);
+    }
+};
+
+// 
