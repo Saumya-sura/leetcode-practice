@@ -17,3 +17,8 @@ bool hasCycle(struct ListNode *head) {
     }
     return false;
 }
+
+EX: 
+1,2,0,    4
+   ^     |
+   |_____|
