@@ -1,0 +1,7 @@
+class Solution {
+public:
+    bool isSorted(vector<int>& nums) {
+        if (nums.empty()) return false;  
+        return is_sorted(nums.begin(), nums.end());
+    }
+};
