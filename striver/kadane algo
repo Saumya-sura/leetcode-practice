@@ -10,3 +10,7 @@ public:
         return maxSum;
     }
 };
+
+EX : 2,3,5,-2,7,-4
+15
+The subarray from index 0 to index 4 has the largest sum = 15
