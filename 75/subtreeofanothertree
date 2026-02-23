@@ -1,0 +1,36 @@
+class Solution {
+private:
+    // Helper function to check if two trees are exactly the same
+    bool isSameTree(TreeNode* p, TreeNode* q) {
+        // If both nodes are null, the trees match so far
+        if (p == nullptr && q == nullptr) {
+            return true;
+        }
+        // If one is null but the other isn't, they don't match
+        if (p == nullptr || q == nullptr) {
+            return false;
+        }
+        // If the values are different, they don't match
+        if (p->val != q->val) {
+            return false;
+        }
+        // Recursively check the left and right subtrees
+        return isSameTree(p->left, q->left) && isSameTree(p->right, q->right);
+    }
+
+public:
+    bool isSubtree(TreeNode* root, TreeNode* subRoot) {
+        // A null tree can't contain a subtree
+        if (root == nullptr) {
+            return false;
+        }
+        
+        // If the trees starting at the current nodes are identical, we found it
+        if (isSameTree(root, subRoot)) {
+            return true;
+        }
+        
+        // Otherwise, recursively check the left and right children of the root
+        return isSubtree(root->left, subRoot) || isSubtree(root->right, subRoot);
+    }
+};
