@@ -1,0 +1,19 @@
+class Solution {
+public:
+    int numberOfSubarrays(vector<int>& nums, int k) {
+        int n = nums.size();
+        vector<int> counts(n+1,0);
+        counts[0] =1;
+
+        int ans =0,odd=0;
+        for(int num:nums){
+
+            odd+= num & 1;
+            if(odd>=k){
+                ans+=counts[odd-k];
+            }
+            counts[odd]++;
+        }
+        return ans;
+    }
+};
