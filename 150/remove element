@@ -1,0 +1,7 @@
+https://leetcode.com/problems/remove-element/description/?envType=study-plan-v2&envId=top-interview-150
+create a counter, chekc the vecotr if curre num != val then add it to curr counter increase counte rnad return counter
+
+EX: nums = [3, 2, 2, 3]
+val =3
+since  3=3 we skip it
+2 != 3 then  nums[0] = nums[1]
