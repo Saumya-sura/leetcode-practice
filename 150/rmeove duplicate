@@ -1,2 +1,7 @@
 https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/?envType=study-plan-v2&envId=top-interview-150
 
+create a counter, iterate , if the number while iteating != to counter  then inccrease the counter and add to it 
+
+here we increase first ebcuase we don't need to voerwrite 
+EX: [1, 1, 2, 2, 3]
+sicne they are equal remove them and put 2 there 
