@@ -5,4 +5,9 @@ https://leetcode.com/problems/majority-element/description/?envType=study-plan-v
  create a counter, map
  iterate, increase map, check if curr in map > size/2 then return it else return -1 
 
- 
+ EX:  [2,2,1,1,1,2,2]
+ 2 occurs 1 
+ 2 occus 2  but its not greate then 7/2 =3
+ 1 1,2,3,
+ 2,3,4
+ so 2 
