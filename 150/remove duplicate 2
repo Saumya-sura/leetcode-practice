@@ -1,6 +1,7 @@
+https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/?envType=study-plan-v2&envId=top-interview-150
 create a counter iterate put a cond if count<2 and curr num is not equal to  2 behind 
 
-
+EX:
 [1,1,1,2,2,3]
 k<2 keep 1 again 1 now for third 1 = nums[0] therofre skip 
 keep 2 and 3
