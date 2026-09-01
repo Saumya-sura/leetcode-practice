@@ -1,0 +1,8 @@
+https://leetcode.com/problems/majority-element/description/?envType=study-plan-v2&envId=top-interview-150
+
+
+[3,2,3]
+ create a counter, map
+ iterate, increase map, check if curr in map > size/2 then return it else return -1 
+
+ 
