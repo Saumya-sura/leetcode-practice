@@ -2,4 +2,13 @@ reduce k to min number of rotations
 save last k elemtns 
  shitft other elemtns to rgiht
  now saved one goes in beg 
- 
+ EX: 
+ nums = [1,2,3,4,5]
+k = 7
+7%5=2 i.e rotate 2 times
+n-k= 3 save 4,5
+now n-k-1 = 2 
+move to right 1,2,3,4,3 then 1,2,3,2,3
+1,2,1,2,3
+now put temo in beg 
+[4,5,1,2,3]
