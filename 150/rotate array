@@ -1,0 +1,5 @@
+reduce k to min number of rotations 
+save last k elemtns 
+ shitft other elemtns to rgiht
+ now saved one goes in beg 
+ 
