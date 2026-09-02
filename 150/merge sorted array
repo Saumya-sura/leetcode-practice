@@ -1,0 +1,17 @@
+create 3 pointers 1 points to last pos in n1 and other in anaother 
+and last poitner in pos where we put the next biggest elemen
+now start comparing form back 
+and add 
+else  add from p2 
+ now to  remvoe sm elemtns of n2  copy them and add 
+
+
+EX:
+nums1: [1, 2, 3, 0, 0, 0]
+p1=3, 
+nums2: [2, 5, 6]
+p2 =6
+p=5
+
+3>6?
+no so add 6 in num1
