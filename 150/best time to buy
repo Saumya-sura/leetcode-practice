@@ -15,12 +15,3 @@ and now repeat till 6 then 6-1 =5
 
 
 
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/?envType=study-plan-v2&envId=top-interview-150
-
-decalre p
-iterate while i=1
- check if curr price> prev 
- then  diff ebtween them aadn add to rpofit and return it 
-
- [7,1,5,3,6,4]
- on day 2 buy 1 sell 5 5-1 =4
