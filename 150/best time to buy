@@ -1,0 +1,26 @@
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/?envType=study-plan-v2&envId=top-interview-150
+
+declare min price as first of the prices and a maxprice as 0 
+iterate  and check if curr price is min or the min pr is 
+not for profit diff betwene curr and minp
+and max
+then return max p 
+
+EX:[7,1,5,3,6,4]
+minp =7 
+since 1 >7 so update minp=1
+p = 1-1 =0 since its not max max is till 1 
+and now repeat till 6 then 6-1 =5
+
+
+
+
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/?envType=study-plan-v2&envId=top-interview-150
+
+decalre p
+iterate while i=1
+ check if curr price> prev 
+ then  diff ebtween them aadn add to rpofit and return it 
+
+ [7,1,5,3,6,4]
+ on day 2 buy 1 sell 5 5-1 =4
