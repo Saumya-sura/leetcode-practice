@@ -1,0 +1,14 @@
+https://leetcode.com/problems/jump-game-ii/description/?envType=study-plan-v2&envId=top-interview-150
+
+decalre jump, currend, farther
+iterate
+cal f
+now if cur == currE
+increase jump and curE =farthest
+
+Ex: [2,3,1,1,4]
+i=0, f =    2
+jump =1, curreE =2
+i = 2:
+f=4, jump =2
+answer ==2 
