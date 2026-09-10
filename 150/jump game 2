@@ -5,7 +5,6 @@ iterate
 cal f
 now if cur == currE
 increase jump and curE =farthest
-
 Ex: [2,3,1,1,4]
 i=0, f =    2
 jump =1, curreE =2
