@@ -1,0 +1,17 @@
+https://leetcode.com/problems/product-of-array-except-self/?envType=study-plan-v2&envId=top-interview-150
+For this  we will check at each position  it sleft product and righ porduct and ans =l*r
+
+define  n for size
+define a new vector  of size n and put 1 in every pos 
+declare l=1
+fir iterat and get product in left
+then declare r=1
+and do for right 
+return ans 
+
+EX: [1, 2, 3, 4]
+
+left: 1,1,2,6
+right: 24,12,4,1
+
+ans = 24,12,8,6
