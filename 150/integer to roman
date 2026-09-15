@@ -1,0 +1,15 @@
+https://leetcode.com/problems/integer-to-roman/description/?envType=study-plan-v2&envId=top-interview-150
+Start with the largest value.
+If num >= value, add its Roman symbol.
+Subtract that value from num
+
+
+create a vector 1 for value and other vector for sybols
+declare a string ans 
+iterate
+if num>=val
+add tht sybol to ans and sub tht val from num
+
+return ans 
+
+Ex:

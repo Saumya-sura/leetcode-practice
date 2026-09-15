@@ -1,0 +1,20 @@
+https://leetcode.com/problems/roman-to-integer/description/?envType=study-plan-v2&envId=top-interview-150
+Roman numerals are added
+when a smaller value comes before a larger value, we subtract it
+IV = 5 - 1 = 4
+VI = 5 + 1 = 6
+
+Create a map  and declare ans
+iterate
+then chekc next char exist?
+and check is curr roman num small than next roman
+if yes then sub and add to ans else add 
+
+
+s = "IX"
+
+I → index 0
+X → index 1
+when i=0, 1<2 then true
+
+EX: 
