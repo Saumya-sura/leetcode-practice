@@ -1,0 +1,44 @@
+https://leetcode.com/problems/length-of-last-word/description/?envType=study-plan-v2&envId=top-interview-150
+
+declare i for size and cnt 
+go until u find ony blank space
+then dec i
+again while loop till they not find balj
+incre cnt and dec i 
+return cnt 
+
+EX:
+s = "Hello World  "
+ H  e  l  l  o     W  o  r  l  d     _
+ 0  1  2  3  4  5  6  7  8  9 10 11 12
+ i=12
+
+ d → cnt = 1
+l → cnt = 2
+r → cnt = 3
+o → cnt = 4
+W → cnt = 5
+now we rexched  a space 
+so retunr cnt 
+
+
+https://leetcode.com/problems/longest-common-prefix/description/?envType=study-plan-v2&envId=top-interview-150
+
+declare a string ans 
+through each character of the first string
+check the same position in every other stri
+EX:
+strs = ["flower", "flow", "flight"]
+strs[0] flower
+f l o w e r
+↑
+0
+ch = 'f'
+strs[1] = "flow
+flow
+↑
+f
+flight f 
+i=1
+chekc for l  i=2 
+but o is not ther ein flight so fl is common

@@ -1,0 +1,17 @@
+https://leetcode.com/problems/gas-station/description/?envType=study-plan-v2&envId=top-interview-150
+
+declare total, tank and start
+iterate array 
+declare gain which is cost  of curr- gas of curr
+add it to total and tank 
+if tank <0 then start = curr+1
+
+return start
+EX:
+
+gas  = [1,2,3,4,5]
+cost = [3,4,5,1,2]
+diff = -2,-2.-2,3,3
+tank =3,6
+start =1,1,1,3,3
+so start at 3
