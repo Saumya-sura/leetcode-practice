@@ -1,0 +1,28 @@
+https://leetcode.com/problems/candy/description/?envType=study-plan-v2&envId=top-interview-150
+declare a n for ratings size
+declare a vector for each pos with 1 
+iterate array 
+if curr rating > then prec
+then curr candies should be 1 more than it 
+then another rfor loop
+from behind 
+if curr rating is greater than ahead one then 
+check for max 
+
+declare ans 
+for each c in canides 
+include in ans and return it 
+
+
+EX:
+ratings:  [1, 0, 2]
+candies:  [1, 1, 1]
+i=1 ntohgn change
+i=2 rating 2 is greater fo 
+candies: [1, 1, 2]
+now right to left 
+i =0 nothing 
+candies[0] = max(1, candies[1] + 1)
+           = max(1, 2)
+           = 2
+candies: [2, 1, 2]
