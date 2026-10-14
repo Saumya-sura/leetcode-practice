@@ -1,0 +1,10 @@
+https://leetcode.com/problems/valid-palindrome/?envType=study-plan-v2&envId=top-interview-150
+
+2 pointer
+left from 1 and right form last 
+skip  non alphanumeric on left  (loop moves left forward until it finds a letter or number)
+skip non alpha on right 
+now compare  2 chars if their llwoer case dones tmatch then flase
+moveleft ahead and right behind to comapre next pair 
+
+EX: 
