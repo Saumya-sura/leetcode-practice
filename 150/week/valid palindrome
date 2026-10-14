@@ -8,3 +8,7 @@ now compare  2 chars if their llwoer case dones tmatch then flase
 moveleft ahead and right behind to comapre next pair 
 
 EX: 
+s = "A man, a plan, a canal: Panama"
+after skipping alphanum
+amanaplanacanalpanama
+l=a, r=a match  go ahead 
