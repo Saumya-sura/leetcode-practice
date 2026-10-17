@@ -11,3 +11,6 @@ jump =1, curreE =2
 i = 2:
 f=4, jump =2
 answer ==2 
+
+Revise : 1
+complexity : medium
