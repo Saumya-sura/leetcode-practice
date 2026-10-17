@@ -1,0 +1,3 @@
+isalnum() - to check if it is alphanumbeirc
+tolower() - to covert to lowercase
+vector<int> a (n,1) - put 1 in every pos  in size n 

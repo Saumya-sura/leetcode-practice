@@ -3,6 +3,7 @@ For this  we will check at each position  it sleft product and righ porduct and 
 
 define  n for size
 define a new vector  of size n and put 1 in every pos 
+
 declare l=1
 fir iterat and get product in left
 then declare r=1
@@ -15,3 +16,5 @@ left: 1,1,2,6
 right: 24,12,4,1
 
 ans = 24,12,8,6
+Compleity: medium
+Revise :1
