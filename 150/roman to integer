@@ -10,11 +10,11 @@ then chekc next char exist?
 and check is curr roman num small than next roman
 if yes then sub and add to ans else add 
 
-
+ex:
 s = "IX"
 
 I → index 0
 X → index 1
 when i=0, 1<2 then true
-
-EX: 
+Revise :1
+Complexity : Easy
