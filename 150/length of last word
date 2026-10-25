@@ -20,25 +20,7 @@ o → cnt = 4
 W → cnt = 5
 now we rexched  a space 
 so retunr cnt 
+Revise :1 
+Complexity :Easy
 
 
-https://leetcode.com/problems/longest-common-prefix/description/?envType=study-plan-v2&envId=top-interview-150
-
-declare a string ans 
-through each character of the first string
-check the same position in every other stri
-EX:
-strs = ["flower", "flow", "flight"]
-strs[0] flower
-f l o w e r
-↑
-0
-ch = 'f'
-strs[1] = "flow
-flow
-↑
-f
-flight f 
-i=1
-chekc for l  i=2 
-but o is not ther ein flight so fl is common
