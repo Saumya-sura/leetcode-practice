@@ -13,3 +13,10 @@
     and add curr word to ans 
     Adds a space between words, but not after the final word
     return ans 
+
+    Revise: 1
+    Complexity :Easy
+    EX: s = "  hello world  "
+    Read h,e,l,l,o a space store the word and now again read w,o,r,
+    words = ["hello", "world"]
+    now ans  = world hello
