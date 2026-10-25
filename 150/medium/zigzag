@@ -1,0 +1,12 @@
+https://leetcode.com/problems/zigzag-conversion/description/?envType=study-plan-v2&envId=top-interview-150
+ int row for curr and int dirc tells us wehre are wwe going 
+ Whenever we reach the top or bottom, we change directi
+ declare a vector iterate  each char in string 
+ dir =1 up -1 down 
+  now put the curr char in curr row 
+  if we're at the top row, we must move downward.
+   if we ar ebottm then up 
+   then move to next row
+REvise :1
+Complexity: Medium
+
