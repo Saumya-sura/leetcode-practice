@@ -1,0 +1,7 @@
+https://leetcode.com/problems/is-subsequence/description/?envType=study-plan-v2&envId=top-interview-150
+create l and r potiners for 2 diff strings
+while both are less than their resp strign size 
+if string of l = string or r 
+then icnrease left else r
+return left = its resp size
+EX:
