@@ -2,6 +2,12 @@ https://leetcode.com/problems/is-subsequence/description/?envType=study-plan-v2&
 create l and r potiners for 2 diff strings
 while both are less than their resp strign size 
 if string of l = string or r 
-then icnrease left else r
+then icnrease left and then  r
 return left = its resp size
 EX:
+s = "abc";
+t = "ahbgdc";
+
+a==a increase l  and r 
+l=b, r=h no mathc  increase r 
+l=b, r =b match  icnrease both 
