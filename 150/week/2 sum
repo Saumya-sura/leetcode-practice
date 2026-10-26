@@ -1,1 +1,9 @@
 https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/?envType=study-plan-v2&envId=top-interview-150
+2 pointers
+while l<r
+ dec sum - num[l] + num[r]
+ if sum = target
+ retunr index of both 
+ if it is > dec r else increase l 
+ Ex: numbers = {2, 7, 11, 15};
+target = 9;
