@@ -1,0 +1,35 @@
+https://leetcode.com/problems/longest-substring-without-repeating-characters/description/?envType=study-plan-v2&envId=top-interview-150
+
+Create a map of chars 
+declare l,r,ml
+Moves the right pointer through the string, one character at a time.
+whether the current character already exists in the set.
+returns 1 if the character exists. If it exists, we have a duplicate. so we earse it 
+
+Now we insert the current character into the set.
+r-l+1 calculates the current window length. for max 
+Finally, return the maximum length.
+
+EX:
+s = "abcabcbb"
+l = 0
+ml = 0
+Cs = {}
+
+r=0 a        window a
+b           a,b
+c   a,b,c
+bca
+cab
+abc
+r = 6 
+b already exists.
+c,b lenght =2 
+r=7 b 
+
+
+"abc" max length 
+
+
+Compeixty:
+reivsE:

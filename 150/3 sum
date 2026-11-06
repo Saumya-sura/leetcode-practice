@@ -1,0 +1,23 @@
+https://leetcode.com/problems/3sum/submissions/2182966343/?envType=study-plan-v2&envId=top-interview-150
+
+Sort array 
+
+declare left curr index+1 
+and right size-1
+sum = nums at curr +num[l] +num[r]
+if sum =0  push everything 
+ if l<r and equla to next then increase left 
+ chekc same for right and dec 
+ return ans 
+ ex : nums = {-1, 0, 1, 2, -1, -4}
+ Sorted: nums = {-4, -1, -1, 0, 1, 2}
+ -4 is curr sum = -3<0 move left 
+ still same 
+ at 0 -2 
+ 1 sum =-1
+
+ fix -1  sum=0 push -1,-1,2
+ -101 = 0
+ ans : [[-1, -1, 2],
+ [-1,  0, 1]]
+ 

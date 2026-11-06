@@ -1,0 +1,29 @@
+https://leetcode.com/problems/substring-with-concatenation-of-all-words/submissions/2185461345/?envType=study-plan-v2&envId=top-interview-150
+
+Creaste a vecotr 
+declare world len,coutn and total len 
+create a map fo stirng and int 
+records how often each word must appear.
+Because each word has length 3, we examine three possible alignments: using offset 
+left: beginning of the current window.
+
+
+
+count: number of words currently inside the window.
+
+
+
+seen: counts the words currently inside the window.
+he right pointer moves forward by wordLen, meaning 3 characters at a time.
+the extracted word is not in required, the current window cannot be valid.
+After recording the match, we remove the leftmost word so the search can continue and find overlapping valid windows if they exist.
+
+ex:
+s = "barfoothefoobarman";
+words = {"foo", "bar"};
+ curr word = bar index  0
+ it is req soa dd 
+  then foo same req 
+  then the its not req then agsain foo and then bar 
+   so index 0 and 9 
+   

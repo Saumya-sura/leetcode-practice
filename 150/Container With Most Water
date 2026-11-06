@@ -1,0 +1,19 @@
+https://leetcode.com/problems/container-with-most-water/description/?envType=study-plan-v2&envId=top-interview-150
+intilaize  l and r 
+and maxWater
+cal h  whihc ever is min adn cal w  r-l 
+then mul them to get area
+chekc maxwater by max 
+Move the shorter wall i.e l 
+ else r--;
+
+ return maxWater
+ EX:
+ hheight = [1, 8, 6, 2, 5]
+ nitially, left = 0, right = 4, and maxWater = 0.
+ The shorter wall is 1, so area = 1 × 4 = 4. Move left forwar
+ l=1,r=4
+ 5, so area = 5 × 3 = 15
+ Left index = 1 · Right index = 3
+
+The shorter wall is 2, so area = 2 × 2 = 4. Move left forward because 8 is taller than 2
