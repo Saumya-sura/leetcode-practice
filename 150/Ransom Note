@@ -1,0 +1,22 @@
+https://leetcode.com/problems/ransom-note/description/?envType=study-plan-v2&envId=top-interview-150
+
+Create a  map for char 
+count char in magazine
+check ransom note and decv 
+
+ex:
+ransomNote = "aaab";
+magazine = "aab";
+ a =2 use on remaining 1
+ a=1 use remaining0
+ a not there so return false
+
+ Because magazine contains only two a characters, but ransomNote needs three.
+
+
+ ransomNote = "aa"
+magazine = "aab"
+a=2,b=1
+
+a there  so dec
+a there so dec and reutnr true
