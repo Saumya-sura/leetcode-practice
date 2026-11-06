@@ -11,3 +11,9 @@ checks the reverse mapping.
 It ensures that two different characters from s cannot map to the same character in t.
 
 EX:
+s = "ab"
+t = "cc"
+
+a-> c , b->c
+ but c is maped to a  in m2 so it retunr flase
+ 
