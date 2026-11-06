@@ -1,0 +1,13 @@
+https://leetcode.com/problems/isomorphic-strings/?envType=study-plan-v2&envId=top-interview-150
+2 maps
+iterate string s 
+store the current characters in two variables 
+a for s and b for t 
+checks whether the character from s already has a mapping. if yes retunr false
+checks whether a already exists in the map.  and checks whether its previously stored mapping is different from the current character
+If both are true, return false.
+checks the reverse mapping.
+
+It ensures that two different characters from s cannot map to the same character in t.
+
+EX:
