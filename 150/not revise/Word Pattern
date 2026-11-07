@@ -12,3 +12,12 @@ create 2 maps
  move forward
  final check whether the number of words equals the number of characters
  
+ ex:
+ pattern = "abba";
+s = "dog cat cat dog";
+
+i =0 char =a word =dog
+1  b cat
+etc etc
+
+at end i =4  pattern.size = 4 return true
