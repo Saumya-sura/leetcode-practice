@@ -16,4 +16,18 @@ t = "cc"
 
 a-> c , b->c
  but c is maped to a  in m2 so it retunr flase
- 
+
+
+ s = "paper"
+t = "title"
+s[i] = p sorted a sorted     p  already match e r
+t[i] =  t   sorted i sorted  t  already match l e
+
+it 1:
+m1: p → t
+m2: t → p
+it 2:
+m1: p → t, a → i
+m2: t → p, i → a
+
+Each character in s consistently maps to its corresponding character in t.

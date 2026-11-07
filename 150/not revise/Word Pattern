@@ -1,0 +1,14 @@
+https://leetcode.com/problems/word-pattern/?envType=study-plan-v2&envId=top-interview-150
+create 2 maps 
+ 1 stores char and other the word
+
+ Extract words from string  s 
+ iterate through words >>
+
+ get curr char 
+ check char mapping
+ check rev mapping 
+ sotre the mapping
+ move forward
+ final check whether the number of words equals the number of characters
+ 
