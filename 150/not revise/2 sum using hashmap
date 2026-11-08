@@ -7,3 +7,10 @@ need  = target - curr
 check if it exists then return 
 else save it
 
+ex: nums = {3, 2, 4}
+target = 6
+i    nus[i]  need
+0  3     6-3 = 3
+1   2    4
+2   4   found 
+1,2 is ans 
