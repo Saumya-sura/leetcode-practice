@@ -1,0 +1,16 @@
+https://leetcode.com/problems/valid-anagram/?envType=study-plan-v2&envId=top-interview-150
+create a map 
+iterate through s1
+increase ch in map 
+iterate trhough s2 and dec
+check freq f any character has a count other than zero, the strings are not anagrams.
+
+
+EX: 
+s = "aab";
+t = "aba";
+
+a=2,b=1
+t:
+a = 2-1, b=1-1, a=a1-1
+0
