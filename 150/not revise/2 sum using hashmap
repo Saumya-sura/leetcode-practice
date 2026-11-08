@@ -1,0 +1,9 @@
+https://leetcode.com/problems/two-sum/?envType=study-plan-v2&envId=top-interview-150
+
+declare a map 
+iterate 
+need  = target - curr
+
+check if it exists then return 
+else save it
+
