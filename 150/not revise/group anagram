@@ -1,0 +1,26 @@
+https://leetcode.com/problems/group-anagrams/submissions/2191776620/
+
+creat map 
+Key = sorted word.
+Value = all original words having that sorted form.
+iterate
+keep og word and sort the copy
+
+sort 
+create a vector vecotr ans  to store all grps
+
+Transfer map values into the answer
+
+return ans
+
+
+ex:
+{"eat", "tea", "tan", "ate"}
+sorted aet, ant
+
+
+aet- > tea,eat,ate
+ant- >tan
+
+aet -> [eat, tea, ate]
+ant -> [tan]
